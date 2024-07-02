@@ -1,0 +1,22 @@
+// find LCM of two numbers using recursion.
+int temp = 1;
+
+int find_lcm(int a, int b); // function prototype
+
+int main() {
+    int a = 6, b = 9, lcm;
+    lcm = find_lcm(a,b);
+    print("LCM of ", a, " and ", b, " is: ", lcm);
+    return 0;
+}
+
+int find_lcm(int a, int b) {  // function definition
+    if(temp % a == 0 && temp % b == 0) {
+        return temp;
+    }
+    else {
+        temp = temp + 1;
+        temp = find_lcm(a,b);
+        return temp;
+    }
+}

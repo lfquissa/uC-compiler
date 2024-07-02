@@ -1,0 +1,15 @@
+// add and subtract
+int add(int x, int y) {
+    return x + y;
+}
+
+int subtract(int x, int y) {
+    return x - y;
+}
+
+int main() {
+   int  foo = 1, bar = 1;
+   print(foo, " + ", bar, " = ", add(foo, bar), "  ");
+   print(foo, " - ", bar, " = ", subtract(foo, bar));
+   return 0;
+}

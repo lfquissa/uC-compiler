@@ -1,0 +1,6 @@
+// Assert value
+int main() {
+    int y=3;
+    assert y == 3;
+    return 0;
+}

@@ -1,0 +1,17 @@
+// number squared
+int n = 8;
+
+int doubleMe (int x) {
+    return x * x;
+}
+
+void main () {
+    int v = n;
+    int w = v + n;
+    int ww = w + n;
+    int www = ww + n;
+    v = doubleMe (v);
+    assert v == n * n;
+    print(v);
+    return;
+}

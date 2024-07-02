@@ -1,0 +1,37 @@
+// Compute the Transpose of a Matrix
+int main() {
+    int a[10][10], transpose[10][10], r, c, i, j;
+    r = 10;
+    c = 10;
+
+    // Assigning elements to the matrix
+    for (i = 0; i < r; i=i+1)
+        for (j = 0; j < c; j=j+1) {
+            a[i][j] = (i*j + i) % 10;
+        }
+
+    // Displaying the matrix a[][]
+    for (i = 0; i < r; i=i+1)
+        for (j = 0; j < c; j=j+1) {
+            print(a[i][j], " ");
+            if (j == c - 1)
+                print();
+        }
+
+    // Finding the transpose of matrix a
+    for (i = 0; i < r; i=i+1)
+        for (j = 0; j < c; j=j+1) {
+            transpose[j][i] = a[i][j];
+        }
+
+    // Displaying the transpose of matrix a
+    print("Transpose of the matrix:");
+    print();
+    for (i = 0; i < c; i=i+1)
+        for (j = 0; j < r; j=j+1) {
+            print(transpose[i][j], " ");
+            if (j == r - 1)
+                print();
+        }
+    return 0;
+}

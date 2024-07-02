@@ -1,0 +1,6 @@
+ply
+pytest
+graphviz
+pathlib
+timeout_decorator
+pytest-timeout
